@@ -16,7 +16,7 @@ const domain = config.get('useWorkChat') ? 'facebook.com' : 'messenger.com';
 const {app, ipcMain} = electron;
 
 app.setAppUserModelId('com.sindresorhus.caprine');
-app.disableHardwareAcceleration();
+//app.disableHardwareAcceleration();
 
 require('electron-debug')({enabled: true});
 require('electron-dl')();
