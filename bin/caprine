@@ -15,7 +15,8 @@ fs.closeSync(fd);
 process.argv.splice(0, 1);
 
 // Set application paths.
-const appPath = path.join(path.dirname(__dirname), 'lib', name);
+//const appPath = path.join(path.dirname(__dirname), 'lib', name);
+const appPath = '/opt/caprine';
 const packageJson = require(path.join(appPath, 'package.json'));
 const productName = packageJson.productName;
 app.setAppPath(appPath);
